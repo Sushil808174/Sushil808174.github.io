@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
         <a href="#" class="logo">Portfolio.</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
-            <a href="#" style="--i:1" class="active">Home</a>
-            <a href="#" style="--i:2">About</a>
-            <a href="#" style="--i:3">Skills</a>
-            <a href="#" style="--i:4">Portfolio</a>
-            <a href="#" style="--i:5">Contact</a>
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About </a>
+            <a href="#skills" style="--i:3">Skills</a>
+            <a href="#project" style="--i:4">Project</a>
+            <a href="#contact" style="--i:5">Contact</a>
+            <a href="Susheel Kumar (3).pdf" class="btn" target="_blank"  download="Susheel Kumar (3).pdf"style="--i:5" id="dw-black"><i class='bx bx-down-arrow-alt' ></i>Resume</a>
         </nav>
     </header>
 
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Susheel Kumar</h1>
@@ -43,6 +45,22 @@
             <img src="without background.png" alt="">
         </div>
     </section>
+
+    <!-- about section -->
+
+    <section class="about" id="about">
+        <div class="about_img">
+            <img src="without background.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About</h2>
+            <h3>Java Backend Developer</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, at reiciendis blanditiis quam modi enim error iste sit optio harum voluptas dolores amet quae facilis minima doloribus pariatur. Aliquid sit perspiciatis corrupti repellat ullam. Alias, facilis ducimus. Incidunt aut quaerat iusto perspiciatis nam illum nihil?</p>
+            <a href="#" class="btn">Read More<span><i class='bx bx-right-arrow-alt' ></i></span></a>
+        </div>
+    </section>
+
 </body>
 <script src="index.js"></script>
 </html>

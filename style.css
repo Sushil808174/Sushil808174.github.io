@@ -4,19 +4,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
     font-family: 'Poppins',sans-serif;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body{
     background-color: #1f242d;
     color: #fff;
 }
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
 .header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 2rem 9%;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -24,7 +38,7 @@ body{
     z-index: 100;
 }
 .logo{
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
@@ -35,11 +49,11 @@ body{
 
 .navbar a{
     display: inline-block;
-    font-size: 18px;
+    font-size: 1.7rem;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
+    margin-left: 4rem;
     transition: .3s;
     opacity: 0;
     animation: slideTop .7s ease forwards;
@@ -47,6 +61,12 @@ body{
 }
 .navbar a:hover,.navbar a.active{
     color: #0ef;
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: #fff;
+    display: none;
 }
 
 .home{
@@ -63,12 +83,12 @@ body{
 }
 
 .home-content h3:nth-of-type(2){
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
     animation: slideTop 1s ease forwards;
     animation-delay: .5s;
 }
 .home-content h3{
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 700;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
@@ -80,7 +100,7 @@ body{
 }
 
 .home-content h1{
-    font-size: 56px;
+    font-size: 5.6rem;
     font-weight: 700;
     margin: -3px 0;
     opacity: 0;
@@ -89,7 +109,7 @@ body{
 }
 
 .home-content p{
-    font-size: 16px;
+    font-size: 1.6rem;
     padding-right: 20px;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
@@ -97,7 +117,7 @@ body{
 }
 
 .home-img img{
-    max-width: 450px;
+    max-width: 35vw;
     border-radius: 50px;
     margin-right: -20px;
     max-height: 500px;
@@ -112,15 +132,15 @@ body{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height:40px;
+    width: 4rem;
+    height:4rem;
     background:transparent ;
-    border: 2px solid #0ef;
+    border: .2rem solid #0ef;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 2rem;
     color: #0ef;
     text-decoration: none;
-    margin: 30px 15px 30px 0;
+    margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
@@ -129,25 +149,68 @@ body{
 .social-media a:hover{
     background: #0ef;
     color: #1f242d;
-    box-shadow: 0 0 20px #0ef;
+    box-shadow: 0 0 2rem #0ef;
 }
 
 .btn{
     display: inline-block;
-    padding: 12px 28px;
+    padding: 1rem 2.8rem;
     background: #0ef;
-    border-radius: 40px;
-    box-shadow: 0 0 10px #0ef;
-    font-size: 16px;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #0ef;
+    font-size: 1.6rem;
     color: #1f242d;
-    letter-spacing: 1px;
+    letter-spacing: .1rem;
     text-decoration: none;
     font-weight: 600;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay:1.5s;
 }
+.btn span{
+    font-size: 1.7rem;
+    text-align: center;
+}
 
+#dw-black{
+    color: black;
+}
+.btn:hover{
+    box-shadow: none;
+}
+
+
+/* about section */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background:#3a4350 ;
+}
+.about_img{
+    width: 35vw;
+    
+}
+.about_img img{
+    border: 2px solid #0ef;
+    box-shadow: rgba(13, 203, 221, 0.7) 0px 2px 5px 1px , rgba(50, 84, 93, 0.25) 0px 50px 100px 0px, rgba(0, 0, 0, 0.3) 0px 30px 60px 0px;
+}
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+.about-content h3{
+    font-size: 2.6rem;
+}
+.about-content p{
+    font-size:1.6rem ;
+    margin: 2rem 0 3rem;
+}
 
 /* KEYFRAME ANIMATION */
 @keyframes slideRight{
