@@ -69,7 +69,7 @@ section{
     display: none;
 }
 
-.home{
+.Home{
     position: relative;
     width: 100%;
     height: 100vh;
@@ -181,7 +181,7 @@ section{
 
 
 /* about section */
-.about{
+.About{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,7 +214,7 @@ section{
 
 
 /* skills section */
-.skills{
+.Skills{
     /* gap: 5rem; */
     max-width:100vw ;
     background: #24314a;
@@ -265,8 +265,10 @@ section{
 }
 
 /* poject section */
-.project{
+.Project{
     box-sizing: border-box;
+    min-height: 180vh;
+    padding: 10rem 9% 2rem;
 }
 .project-box{
     width: 95%;
@@ -275,14 +277,19 @@ section{
     grid-template-columns: repeat(2,1fr);
     gap: 3rem;
     box-sizing: border-box;
+    /* border: 2px solid yellow; */
 }
-.project-box div{
+.project-card{
+    border: 2px solid red;
+}
+
+.project-box .project-card{
     width: 100%;
-    height: 40vh;
+    height: 70vh;
 }
 .project-box div img{
     width: 100%;
-    height: 100%;
+    height: 60%;
 }
 .heading-site{
     text-align: center;
@@ -333,10 +340,12 @@ section{
 }
 
 /* contact section */
-.contact{
+.Contact{
     max-width: 100%;
+    min-height: 80vh;
+    padding: 10rem 9% 2rem;
     background: #3a4350;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .contact-content{
     display: grid;
