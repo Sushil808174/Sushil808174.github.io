@@ -8,6 +8,17 @@
     <title>Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+
+    <script
+    src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+  ></script>
+  
+  <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+  <link
+     rel="stylesheet"
+     href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+  />
+
 </head>
 
 <body>
@@ -193,10 +204,14 @@
 
     <!-- Github calender section -->
 
-    <!-- <section class="github-calender">
+    <section class="react-activity-calendar">
 
+        <div class="calendar" style="background-color: white; color: rgb(79, 79, 79);">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
 
-    </section> -->
+    </section>
 
 
 
@@ -250,5 +265,10 @@
 
 </body>
 <script src="index.js"></script>
+<script>
+    GitHubCalendar(".calendar", "Sushil808174");
+    // or enable responsive functionality
+    GitHubCalendar(".calendar", "Sushil808174", { responsive: true });
+</script>
 
 </html>

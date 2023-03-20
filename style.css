@@ -444,6 +444,12 @@ textarea{
 }
 
 
+/* github section */
+.react-activity-calendar{
+    min-height: 80vh;
+    min-width: 100vw;
+}
+
 /* media query */
 @media screen and (mid-width: 768px) and (max-width: 1024px) {
     html{
