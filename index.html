@@ -31,9 +31,15 @@
             <a href="#skills" style="--i:3" class="nav-link skills">Skills</a>
             <a href="#projects" style="--i:4" class="nav-link projects">Projects</a>
             <a href="#contact" style="--i:5" class="nav-link contact">Contact</a>
-            <a href="Susheel Kumar (3).pdf" class="btn nav-link resume" target="_blank" download="Susheel Kumar (3).pdf"
-                style="--i:5" id="resume-link-1"><i class='bx bx-down-arrow-alt'></i>Resume</a>
-        </nav>
+            <!-- <a href="#" class="btn nav-link resume"
+                style="--i:5" id="resume-link-1" download=""><i class='bx bx-down-arrow-alt'></i>Resume</a> -->
+               <div class="nav-link resume" style="--i:5">
+                <button onclick="resume()" id="resume-button-1" class="btn" ><a id="resume-link-1" href="Susheel Kumar (3).pdf" 
+                    download="Susheel Kumar (3).pdf"> 
+                    Resume<i class='bx bx-down-arrow-alt'></i></a> </button>
+               </div> 
+       
+            </nav>
     </header>
 
     <section class="Home" id="home">
@@ -52,8 +58,11 @@
                 <a href="https://github.com/Sushil808174" target="_blank" style="--i:8"><i
                         class='bx bxl-github'></i></a>
             </div>
-            <a href="Susheel Kumar (3).pdf" id="resume-link-2" class="btn" target="_blank"
-                download="Susheel Kumar (3).pdf"><i class='bx bx-down-arrow-alt'></i>Resume</a>
+            <div class="nav-link resume" style="--i:5">
+                <button onclick="resume()" id="resume-button-2" class="btn" ><a id="resume-link-2" href="Susheel Kumar (3).pdf" 
+                    download="Susheel Kumar (3).pdf"> 
+                    Resume<i class='bx bx-down-arrow-alt'></i></a> </button>
+               </div> 
         </div>
 
         <div class="home-img-home">
@@ -75,7 +84,7 @@
                 Backend part of web applications. Extensive expertise in website architecture, design, and web design,
                 and web API designs. Problem-solving mindset with a goal to optimize my application for better stability
                 and speed. Love to work in a team.</p>
-            <a href="#" class="btn">Read More<span><i class='bx bx-right-arrow-alt'></i></span></a>
+            <a href="https://drive.google.com/file/d/1bxiGpvdaju1HGaeWyhqRKjPmWoEsy4pm/view?usp=share_link" target="_blank" class="btn">View Resume<span><i class='bx bx-right-arrow-alt'></i></span></a>
         </div>
     </section>
 
@@ -95,43 +104,43 @@
                     <div> <img class="skills-card-img"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="">
                     </div>
-                    <div class="skills-card-name">HTML</div>
+                    <div class="skills-card-name">CSS</div>
                 </div>
                 <div class="box skills-card">
                     <div><img class="skills-card-img"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                             alt=""></div>
-                    <div class="skills-card-name">HTML</div>
+                    <div class="skills-card-name">JavaScript</div>
                 </div>
                 <div class="box skills-card">
                     <div><img class="skills-card-img"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
                             alt=""></div>
-                    <div class="skills-card-name">HTML</div>
+                    <div class="skills-card-name">Bootstrap</div>
                 </div>
                 <div class="box skills-card">
                     <div><img class="skills-card-img"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="">
                     </div>
-                    <div class="skills-card-name">HTML</div>
+                    <div class="skills-card-name">Java</div>
                 </div>
                 <div class="box skills-card">
                     <div><img class="skills-card-img"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="">
                     </div>
-                    <div class="skills-card-name">HTML</div>
+                    <div class="skills-card-name">Spring Boot</div>
                 </div>
                 <div class="box skills-card">
                     <div><img class="skills-card-img"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="">
                     </div>
-                    <div class="skills-card-name">HTML</div>
+                    <div class="skills-card-name">MySql</div>
                 </div>
                 <div class="box skills-card">
                     <div> <img class="skills-card-img"
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="">
                     </div>
-                    <div class="skills-card-name">HTML</div>
+                    <div class="skills-card-name">GitHub</div>
                 </div>
 
             </div>
@@ -275,5 +284,6 @@
     // or enable responsive functionality
     GitHubCalendar(".calendar", "Sushil808174", { responsive: true });
 </script>
+
 
 </html>
