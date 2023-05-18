@@ -37,6 +37,11 @@ section{
     align-items: center;
     z-index: 100;
 }
+
+.header.sticky{
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
 .logo{
     font-size: 2.5rem;
     color: #fff;
@@ -49,7 +54,7 @@ section{
 
 .navbar a,.resume{
     display: inline-block;
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
@@ -317,6 +322,12 @@ section{
 }
 .project-card{
     border: 2px solid #0ef;
+    border-radius: .8rem;
+    overflow: hidden;
+}
+.project-card:hover{
+    box-shadow: 0 0 1rem #0ef;
+    transition: .5s ease;
 }
 
 .project-box .project-card{
@@ -519,6 +530,36 @@ textarea{
     height: 100%;
 }
 
+
+
+/* Footer part */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;background-color: #1f242d;
+}
+.footer-text p{
+    font-size: 1.6rem;
+}
+.footer-icontop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    border-radius: .8rem;
+    background-color: #0ef;transition: .5s ease;
+}
+.footer-icontop a:hover{
+    box-shadow: 0 0 1rem #0ef;
+}
+.footer-icontop a i{
+    font-size: 2.4rem;
+    color: #1f242d;
+}
+
+
 /* media query */
 
 @media screen and (min-width: 320px) and (max-width: 424px) {
@@ -526,9 +567,31 @@ textarea{
         font-size: 50%;
         overflow-x: hidden;
     }
-   .navbar{
-     display: none;
-   }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        padding: 1rem 3%;
+        background-color: #1f242d;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+        display: none;
+      }
+   
+      .navbar.active{
+       display: block;
+      }
+   
+      .navbar a{
+       display: block;
+       font-size: 2rem;
+       margin: 3rem 0;
+      }
+      .resume{
+       margin-left: 0;
+      }
 
    .header{
         padding: 2rem 4%;
@@ -691,6 +754,13 @@ textarea{
     .btn-project1 a{
         padding: 1rem 2rem;
     }
+
+    .footer-text p {
+        font-size: 1.2rem;
+    }
+    .footer-icontop a i{
+        font-size: 1.6rem;
+    }
 }
 
 
@@ -699,9 +769,31 @@ textarea{
         font-size: 50%;
         overflow-x: hidden;
     }
-   .navbar{
-     display: none;
-   }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        padding: 1rem 3%;
+        background-color: #1f242d;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+        display: none;
+      }
+   
+      .navbar.active{
+       display: block;
+      }
+   
+      .navbar a{
+       display: block;
+       font-size: 2rem;
+       margin: 3rem 0;
+      }
+      .resume{
+       margin-left: 0;
+      }
 
    .header{
         padding: 2rem 4%;
@@ -716,7 +808,7 @@ textarea{
         flex-direction: column;
         /* justify-content: space-between; */
         align-items: center;
-        padding: 10rem 9% 2rem;
+        padding: 10rem 4% 2rem;
     /* padding: 5rem 5%; */
         /* padding-top: 2rem;
         padding-left: 2%;
@@ -857,6 +949,13 @@ textarea{
     .btn-project1 a{
         padding: 1rem 2rem;
     }
+
+    .footer-text p {
+        font-size: 1.2rem;
+    }
+    .footer-icontop a i{
+        font-size: 1.6rem;
+    }
 }
 
 
@@ -866,7 +965,28 @@ textarea{
         overflow-x: hidden;
     }
    .navbar{
+     position: absolute;
+     top: 100%;
+     left: 0;
+     width: 100%;
+     padding: 1rem 3% 9rem;
+     background-color: #1f242d;
+     border-top: .1rem solid rgba(0, 0, 0, .2);
+     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
      display: none;
+   }
+
+   .navbar.active{
+    display: block;
+   }
+
+   .navbar a{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+   }
+   .resume{
+    margin-left: 0;
    }
 
    .header{
